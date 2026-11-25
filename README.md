@@ -44,20 +44,6 @@ For Week 3, I cracked the password on a protected PDF file (`My Locked PDF1.pdf`
 
 ---
 
-## 🐞 Problems I Ran Into and How I Fixed Them
-
-### Problem 1. My downloaded John the Ripper file wouldn't "Extract All"
-The file was a `.7z` archive, and Windows only offered "Extract All", which doesn't open `.7z` files properly, because 7-Zip wasn't installed yet.
-
-**Fix:** Installed 7-Zip from 7-zip.org, after which right-clicking the file showed a proper 7-Zip extract option.
-
-### Problem 2. Wasn't sure the hash loaded into Johnny
-After pointing Johnny at `john.exe`, I was still on the Settings screen and didn't see a password row, so I assumed nothing had loaded.
-
-**Fix:** The password list lives under the **Passwords** tab on the left, not Settings. Once I clicked over, the loaded hash (format: PDF) was right there, and the status bar had already confirmed "1 left" the whole time.
-
----
-
 ## 💡 What I Learned
 
 - **Encryption vs. hashing:** encryption is reversible with the right key; hashing is one-way, so "cracking" a password hash means guessing candidates and hashing each one until it matches, never reversing the hash directly.
